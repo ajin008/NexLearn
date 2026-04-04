@@ -68,7 +68,7 @@ export const useExamStore = create<ExamState>((set) => ({
   answers: [],
   currentIndex: 0,
   markedForReview: [],
-  visitedQuestions: [], // ← new
+  visitedQuestions: [],
   result: null,
   remainingSeconds: 0,
 

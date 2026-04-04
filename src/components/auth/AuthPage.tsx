@@ -15,7 +15,6 @@ export default function AuthPage() {
   const [mobile, setMobile] = useState("");
 
   useEffect(() => {
-    // Push a fake entry so back button can't go behind login
     window.history.pushState(null, "", window.location.href);
 
     const handlePopState = () => {

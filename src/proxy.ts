@@ -27,13 +27,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    // Only match these specific routes — NOT all routes
-    "/",
-    "/login",
-    "/mcq",
-    "/mcq/:path*",
-    "/result",
-    "/result/:path*",
-  ],
+  matcher: ["/", "/login", "/mcq", "/mcq/:path*", "/result", "/result/:path*"],
 };

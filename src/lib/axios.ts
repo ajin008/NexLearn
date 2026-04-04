@@ -50,7 +50,6 @@ api.interceptors.response.use(
         originalRequest.headers["Authorization"] = `Bearer ${newAccessToken}`;
         return api(originalRequest);
       } catch {
-        // Refresh also failed — force logout
         redirectToLogin();
         return Promise.reject(error);
       }

@@ -37,7 +37,6 @@ export default function ExamLeftPanel({
 
   return (
     <div className="flex flex-col h-full   rounded-2xl p-6">
-      {/* Question card — grows to fill space */}
       <div className="flex-1 overflow-y-auto pr-2">
         <QuestionCard
           question={question}
@@ -48,7 +47,6 @@ export default function ExamLeftPanel({
         />
       </div>
 
-      {/* Bottom action buttons — always visible */}
       <div className="flex items-center gap-3 mt-6 pt-4 border-t border-gray-100">
         {/* Mark for Review */}
         <button

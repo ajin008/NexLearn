@@ -36,7 +36,7 @@ export function useTimer({ onTimeUp }: UseTimerProps) {
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, []); // ✅ empty deps — run once on mount only
+  }, []);
 
   const formatTime = (seconds: number): string => {
     const mins = Math.floor(seconds / 60);

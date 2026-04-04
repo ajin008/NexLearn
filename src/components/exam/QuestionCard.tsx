@@ -33,7 +33,6 @@ export default function QuestionCard({
   return (
     <div className="flex flex-col gap-4">
       <div className="bg-[#ffffff] shadow-sm rounded-2xl p-6 flex flex-col gap-4">
-        {/* Comprehension button — only if paragraph exists */}
         {comprehension && (
           <div>
             <button

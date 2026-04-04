@@ -26,7 +26,7 @@ export function useAuth() {
         const res = await sendOtp(`+91${mobile}`);
         if (res.success) {
           toast.success("OTP sent!");
-          onSuccess(); // ← optimistic: move to next step immediately
+          onSuccess();
         } else {
           toast.error(res.message);
         }
@@ -53,7 +53,7 @@ export function useAuth() {
           toast.success("Welcome back!");
           window.location.href = "/";
         } else if (res.success && !res.login) {
-          onNewUser(); // ← go to profile step
+          onNewUser();
         } else {
           toast.error(res.message);
         }
@@ -101,7 +101,6 @@ export function useAuth() {
     try {
       await logoutApi();
     } catch {
-      // even if API fails, clear local state
     } finally {
       logout();
       window.location.href = "/login";

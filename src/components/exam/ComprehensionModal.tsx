@@ -8,7 +8,6 @@ interface Props {
 }
 
 export default function ComprehensionModal({ paragraph, onClose }: Props) {
-  // Close on Escape key
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();

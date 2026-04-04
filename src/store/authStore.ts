@@ -53,10 +53,8 @@ export const useAuthStore = create<AuthState>()(
       },
     }),
     {
-      name: "nexlearn-auth", // key in localStorage
+      name: "nexlearn-auth",
       partialize: (state) => ({
-        // only persist these fields
-        // never persist actions
         user: state.user,
         accessToken: state.accessToken,
         refreshToken: state.refreshToken,
