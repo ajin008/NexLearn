@@ -60,7 +60,7 @@ export default function McqPage() {
     onTimeUp: handleTimeUp,
   });
 
-  // ── Current answer — fresh from store ─────────────────
+  // ── Current answer  fresh from store ─────────────────
   const currentAnswer = answers.find(
     (a) => a.question_id === currentQuestion?.question_id
   );

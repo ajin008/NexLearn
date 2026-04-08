@@ -12,9 +12,9 @@ export default function ExamTimer({
   isDanger,
 }: Props) {
   const getBgColor = () => {
-    if (isDanger) return "#dc2626"; // red — last 1 min
-    if (isWarning) return "#d97706"; // amber — last 5 mins
-    return "#1c3141"; // default dark blue
+    if (isDanger) return "#dc2626"; 
+    if (isWarning) return "#d97706"; 
+    return "#1c3141";
   };
 
   return (

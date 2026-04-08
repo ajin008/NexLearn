@@ -10,7 +10,6 @@ interface Props {
 }
 
 export default function ExamRightPanel({
-  title,
   onSelect,
   formattedTime,
   isWarning,
