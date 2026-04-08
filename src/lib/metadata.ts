@@ -3,7 +3,7 @@
 import type { Metadata } from "next";
 
 export const siteMetadata: Metadata = {
-  metadataBase: new URL(""),
+  metadataBase: new URL("http://localhost:3000/login"),
 
   title: {
     default: "MCQ Quiz App | Practice & Test Your Knowledge",
